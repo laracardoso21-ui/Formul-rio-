@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário de Informações</title>
     <style>
         /* =========================
            VARIÁVEIS DE CORES
         ========================== */
         :root {
-            --cor-principal: #6a0dad;
-            --cor-secundaria: #9c27b0;
-            --cor-destaque: #d8b4fe;
-            --cor-fundo: #f5efff;
+            --cor-principal: #3a9bdc;
+            --cor-secundaria: #68b8f0;
+            --cor-destaque: #e0f2fe;
+            --cor-fundo: #f0f8ff;
             --cor-card: #ffffff;
-            --cor-texto: #2d163b;
+            --cor-texto: #1a365d;
             --cor-texto-claro: #ffffff;
-            --cor-borda: #c4a7d7;
-            --sombra: 0 4px 15px rgba(80, 20, 120, 0.15);
+            --cor-borda: #bae6fd;
+            --sombra: 0 4px 15px rgba(58, 155, 220, 0.15);
         }
 
         /* =========================
@@ -109,14 +109,13 @@
             font-size: 16px;
         }
 
-        /* Estilo específico para input do tipo range e file */
         input[type="range"] {
             padding: 0;
             cursor: pointer;
         }
 
         input[type="file"] {
-            background-color: #faf5ff;
+            background-color: #f8fafc;
             cursor: pointer;
         }
 
@@ -133,7 +132,7 @@
         }
 
         button:hover {
-            opacity: 0.8;
+            opacity: 0.85;
         }
 
         /* =========================
@@ -154,8 +153,8 @@
          CABEÇALHO
     ========================== -->
     <header id="inicio">
-        <h1>Formulário de Informações Gerais</h1>
-        <p>Digite suas informações📄</p>
+        <h1>Formulário de Informações</h1>
+        <p>Exemplo prático de formulário HTML com 8 novos tipos de entrada</p>
     </header>
 
     <!-- =========================
@@ -174,49 +173,49 @@
         <form id="formulario">
             <!-- 1. Telefone -->
             <div class="campo">
-                <label for="telefone">1. Telefone / WhatsApp (tel):</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000">
+                <label for="telefone">1. Telefone de Contato:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="43 99999-9999">
             </div>
 
-            <!-- 2. URL / Website -->
+            <!-- 2. Link / URL -->
             <div class="campo">
-                <label for="site">2. Perfil ou Portfólio (url):</label>
-                <input type="url" id="site" name="site" placeholder="https://seu-usuario.github.io">
+                <label for="site">2. Link do Seu Perfil:</label>
+                <input type="url" id="site" name="site" placeholder="https://github.com/seu-usuario">
             </div>
 
-            <!-- 3. Hora -->
+            <!-- 3. Horário -->
             <div class="campo">
-                <label for="horario">3. Horário de Preferência (time):</label>
+                <label for="horario">3. Horário de Preferência:</label>
                 <input type="time" id="horario" name="horario">
             </div>
 
-            <!-- 4. Arquivo -->
+            <!-- 4. Upload de Arquivo -->
             <div class="campo">
-                <label for="curriculo">4. Enviar Documento / Foto (file):</label>
-                <input type="file" id="curriculo" name="curriculo">
+                <label for="arquivo">4. Anexar Documento ou Foto:</label>
+                <input type="file" id="arquivo" name="arquivo">
             </div>
 
-            <!-- 5. Intervalo / Deslizante -->
+            <!-- 5. Barra Deslizante -->
             <div class="campo">
-                <label for="satisfacao">5. Nível de Conhecimento em HTML (range):</label>
-                <input type="range" id="satisfacao" name="satisfacao" min="0" max="100" step="10">
+                <label for="nivel">5. Nível de Conhecimento:</label>
+                <input type="range" id="nivel" name="nivel" min="0" max="100" step="10">
             </div>
 
-            <!-- 6. Pesquisa -->
+            <!-- 6. Campo de Busca -->
             <div class="campo">
-                <label for="busca">6. Campo de Busca (search):</label>
-                <input type="search" id="busca" name="busca" placeholder="Digite o que procura...">
+                <label for="pesquisa">6. Pesquisa de Conteúdo:</label>
+                <input type="search" id="pesquisa" name="pesquisa" placeholder="Digite o que deseja pesquisar...">
             </div>
 
             <!-- 7. Mês e Ano -->
             <div class="campo">
-                <label for="mes_ano">7. Mês e Ano de Início (month):</label>
-                <input type="month" id="mes_ano" name="mes_ano">
+                <label for="mes">7. Mês e Ano de Entrada:</label>
+                <input type="month" id="mes" name="mes">
             </div>
 
-            <!-- 8. Semana e Ano -->
+            <!-- 8. Semana -->
             <div class="campo">
-                <label for="semana">8. Semana do Ano (week):</label>
+                <label for="semana">8. Semana do Ano:</label>
                 <input type="week" id="semana" name="semana">
             </div>
 
@@ -230,7 +229,6 @@
          RODAPÉ
     ========================== -->
     <footer id="contato">
-      
     </footer>
 
 </body>
